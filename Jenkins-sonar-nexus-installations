@@ -64,18 +64,18 @@ https://www.vultr.com/docs/how-to-install-sonarqube-on-ubuntu-16-04
 
 Sonarqube-9v installation steps:
 --------------------------------
-1. wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.0.1.46107.zip
+1.       wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.0.1.46107.zip
 ls
-2. sudo apt -y install unzip
-3. sudo unzip sonarqube-*.zip -d /opt
-4. sudo mv /opt/sonarqube-* /opt/sonarqube
+2.        sudo apt -y install unzip
+3.         sudo unzip sonarqube-*.zip -d /opt
+4.        sudo mv /opt/sonarqube-* /opt/sonarqube
 
-5. sudo groupadd sonar
-6. sudo useradd -d /opt/sonarqube -g sonar sonar
-7. sudo chown sonar:sonar /opt/sonarqube -R
+5.      sudo groupadd sonar
+6.      sudo useradd -d /opt/sonarqube -g sonar sonar
+7.     sudo chown sonar:sonar /opt/sonarqube -R
 
-8. sudo nano /opt/sonarqube/conf/sonar.properties
-       uncomment and update username and password
+8.    sudo nano /opt/sonarqube/conf/sonar.properties
+            uncomment and update username and password
 #sonar.jdbc.username=
 #sonar.jdbc.password=
 
